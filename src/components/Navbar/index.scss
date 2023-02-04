@@ -1,0 +1,64 @@
+@import "../../sass/mixins";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+
+  &__logo > img
+  {
+    width: 100%;
+
+    @media (max-width:480px) {
+      width: 50%;
+      
+    }
+  
+  }
+
+  &__links {
+    font-size: var(--font-size-link);
+    color: var(--color-white);
+  }
+
+  &__link {
+    position: relative;
+
+    @include under-line-hover(var(--color-white));
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+
+  &__link > a {
+    display: inline-block;
+    color: inherit;
+  }
+
+  &__session > span {
+    display: inline-block;
+    position: relative;
+    @include under-line-hover(var(--color-white));
+  }
+
+  &__sign-in {
+    display: inline-block;
+    color: var(--color-white);
+    font-size: var(--font-size-link);
+  }
+
+  @media (max-width : 600px)
+  {
+    &__session
+    {
+      display: none;
+    }
+    &__links
+    {
+      display: none;
+
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    color: var(--color-white);
+    cursor: pointer;
+    // background-color: var(--primary-color);
+    background-color: var(--primary-color-light);
+    font-size: var(--font-size-link);
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      background-color: var(--primary-color-dark);
+    }
+  }
+
+  &--ghost {
+    border: var(--color-white) solid 1px;
+    background-color: transparent;
+
+    &:hover {
+      background-color: var(--color-white);
+      color: var(--color-black);
+    }
+  }
+
+  &__navbar {
+    font-size: var(--font-size-link);
+    padding: 0.4rem 0.7rem;
+    margin-left: 2rem;
+  }
+
+  &__header {
+    padding: 0.8rem 0;
+    flex: 0 1 22%;
+
+    &:not(:last-child) {
+      margin-right: 2.5rem;
+    }
+  }
+
+  &__card
+  {
+    padding:1rem 1.7rem;
+    
+  }
+}

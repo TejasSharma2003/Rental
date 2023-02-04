@@ -1,0 +1,27 @@
+.about {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  position: relative;
+  margin-top:15rem;
+
+  @media (max-width:840px)
+  {
+    text-align: center;
+    flex-direction:column;
+    margin-top: 5rem;
+    align-items: center;
+  }
+
+  &__text-box {
+    flex: 0 1 44%;
+  }
+
+  &__img-box {
+    flex: 0 0 40%;
+  }
+
+  &__img-box > img {
+    width: 100%;
+  }
+}
