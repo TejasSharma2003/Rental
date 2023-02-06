@@ -1,20 +1,27 @@
+@import '../../sass/mixins';
+
 .header {
   min-height: 100vh;
-  background-image: url("../../assets/ivana-cajina-G7JFnx7FEgY-unsplash.jpg");
+  background-image: linear-gradient(to bottom,rgba(#000,40%),rgba(#000,50%)),url("../../assets/header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding:2rem;
+  padding: 2rem;
 
+  &__box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform :translateY(10rem);
 
+  }
 
   &__box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -80%);
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -80%);
     text-align: center;
-    white-space: nowrap;
     color: var(--color-white);
     padding: 0 2rem;
   }
@@ -28,24 +35,10 @@
   &__btn-box {
     display: flex;
     justify-content: center;
-    flex-basis: content;
     margin-top: 2rem;
   }
 
-  @media (max-width:400px) {
-
-    &__primary-h1
-    {
-      font-size:5rem;
-    }
-    
-  }
-
-  @media (max-width:318px) {
-    &__primary-h1
-    {
-      font-size:4.5rem;
-    }
-    
+  @include responsive(mobile){
+    background-position: revert;
   }
 }

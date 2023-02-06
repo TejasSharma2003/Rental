@@ -1,14 +1,12 @@
+@import "../../sass/mixins";
+
 .composition {
   position: relative;
   width: 50%;
   height: 100%;
   display: flex;
   align-items: start;
-
-  @media (max-width: 840px) {
-    margin-top: 10rem ;
-    justify-content: center;
-  }
+  justify-content: center;
 
   &__img {
     width: 50%;
@@ -45,41 +43,57 @@
       top: 3rem;
     }
 
-    @media (max-width: 1257px) {
+    @media (max-width: 1342px) {
       &--2 {
-        top: 13rem;
+        top: 12rem;
         left: 18rem;
       }
     }
 
-    @media (max-width: 840px) {
-      position: relative;
-      width: 70%;
+    @media (max-width: 1103px) {
+      width: 65%;
+      &--3 {
+        right: -7rem;
+      }
+    }
 
+    @media (max-width: 920px) {
+      position: relative;
       &--1 {
         top: 0;
-        left: 2rem;
-      }
-
-      &--2 {
-        top: -1rem;
         left: 0;
-        
+        transform:translateX(30%);
+      }
+      &--2 {
+        top: 0;
+        left: 0;
+        transform:translateY(-10%);
       }
 
       &--3 {
         top: 0;
-        right: 2rem;
+        left: 0;
+        transform:translateX(-30%);
       }
     }
 
-    @media (max-width:600px)
+    @include responsive(mobile)
     {
-      width: 80%;
+      width: 75%;
     }
   }
 
   &:hover &__img:not(:hover) {
     transform: scale(0.9);
+  }
+
+  @media (max-width: 920px) {
+    transform: translateY(8rem);
+    width: 60%;
+  }
+
+  @media (max-width:635px)
+  {
+    margin-bottom: 5rem;
   }
 }

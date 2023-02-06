@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Nunito+Sans:wght@300;400;600&display=swap");
+
+@import "./mixins";
+
 * {
   margin: 0;
   padding: 0;
@@ -12,19 +15,23 @@
 // Extra large screens, TV – 1201px, and more.
 
 html {
-  font-size: 60.5%; 
+  font-size: 62.5%;
   overflow-x: hidden;
-  //Desktops / large screens
-  @media (max-width: 1200px) {
-    font-size: 50%; 
+
+  @include responsive(desktop) {
+    font-size: 56.25%; //1rem = 9px;
   }
 
-  @media (max-width: 1024px) {
-    font-size: 45.75%; 
+  @include responsive(laptop) {
+    font-size: 53.125%; //1rem = 8.5px
   }
-  @media(max-width:480px)
-  {
-    font-size:35.5% 
+
+  @include responsive(tab) {
+    font-size: 50%; //1rem = 8px;
+  }
+
+  @include responsive(mobile) {
+    font-size: 46.875%; //1rem = 7.5px;
   }
 }
 

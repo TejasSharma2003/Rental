@@ -1,3 +1,5 @@
+@import '../../sass/mixins';
+
 .para {
   font-size: var(--font-size-para);
   line-height: 1.6;
@@ -10,15 +12,15 @@
   &__header {
     max-width: 60%;
     margin: 0 auto;
-    white-space: normal;
     color: var(--color-white);
+
+    @include responsive(mobile)
+    {
+      max-width: 100%;
+    }
   }
   &__about {
     padding: 1rem 0;
   }
 
-  @media (max-width:400px)
-  {
-    max-width: 100%;
-  }
 }

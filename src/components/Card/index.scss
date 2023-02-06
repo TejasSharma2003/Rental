@@ -1,13 +1,9 @@
 .card {
-  max-width: 35rem;
+  max-width: 38rem;
   background-color: var(--color-white);
   box-shadow: 0rem 2rem 5rem rgba(#000, 0.1);
-  padding: 2rem;
+  padding: 2rem 2rem 3rem 2rem;
   transition: transform 0.3s;
-
-  // &:not(:last-child) {
-  //   margin-right: 4rem;
-  // }
 
   &:hover {
     transform: translateY(-1rem) scale(1.05);
@@ -26,7 +22,9 @@
   }
 
   &__row {
-    padding: 0.8rem 0;
+    &:not(:last-child) {
+      padding: 1.3rem 0;
+    }
 
     &--2 {
       display: flex;
@@ -37,25 +35,22 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-top:1.8rem;
+      padding-top: 2rem;
     }
   }
 
   &__place-name {
     font-size: var(--font-size-h2);
     color: var(--color-black);
-    padding-top: 1.5rem;
   }
 
   &__description {
     display: inline-block;
     font-size: var(--font-size-caption);
     color: var(--secondary-color);
-    padding: 0.7rem 0;
   }
 
   &__place-price {
-    // font-size: var(--font-size-h2);
     font-size: 3rem;
     font-weight: 600;
   }

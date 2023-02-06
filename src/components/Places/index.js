@@ -6,6 +6,7 @@ import "./index.scss";
 import Cards from "../Cards";
 import Link from "../../elements/Link";
 
+
 function Places() {
   return (
     <div id="section">

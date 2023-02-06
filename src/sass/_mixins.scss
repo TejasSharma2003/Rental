@@ -8,12 +8,38 @@
     bottom: 0;
     background-color: $bg-color;
     opacity: 0;
-    transform: translateY(5px);
+    transform: translateY(6px);
     transition: transform 0.3s, opacity 0.3s;
   }
 
   &:hover::before {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(3px);
+  }
+}
+
+@mixin responsive($device) {
+  @if $device == "desktop" {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if $device == "laptop" {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+
+  @if $device == "tab" {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $device== "mobile" {
+    @media (max-width: 480px) {
+      @content;
+    }
   }
 }

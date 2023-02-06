@@ -27,12 +27,13 @@
 
   &__navbar {
     font-size: var(--font-size-link);
-    padding: 0.4rem 0.7rem;
+    padding: 0.6rem 0.8rem;
     margin-left: 2rem;
   }
 
   &__header {
-    padding: 0.8rem 0;
+    padding: 1rem 1.3rem;
+    white-space: nowrap;
     flex: 0 1 22%;
 
     &:not(:last-child) {
@@ -40,9 +41,7 @@
     }
   }
 
-  &__card
-  {
-    padding:1rem 1.7rem;
-    
+  &__card {
+    padding: 1rem 1.7rem;
   }
 }

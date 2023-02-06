@@ -8,18 +8,22 @@
 
   &__logo > img
   {
-    width: 100%;
-
-    @media (max-width:480px) {
-      width: 50%;
-      
+    width: 100%; 
+    
+    @include responsive(tab)
+    {
+      width: 75%;
     }
-  
   }
 
   &__links {
     font-size: var(--font-size-link);
     color: var(--color-white);
+
+    @include responsive(tab)
+    {
+      display: none;
+    }
   }
 
   &__link {
@@ -49,16 +53,4 @@
     font-size: var(--font-size-link);
   }
 
-  @media (max-width : 600px)
-  {
-    &__session
-    {
-      display: none;
-    }
-    &__links
-    {
-      display: none;
-
-    }
-  }
 }
