@@ -14,10 +14,13 @@ function Header() {
       <Navbar />
       <div className="header__box-container">
         <div className="header__box">
-          <h1 className="header__primary-h1">Vacation Rental Service</h1>
+          <h1 className="header__primary-h1">
+            Welcome to Our Vacation Rentals
+          </h1>
           <Para classes="para__header">
-            To get the best of your adventure you just need to and where you
-            like. We are waiting you!
+            Discover your perfect getaway at Botane. Our carefully
+            selected vacation rentals offer the ultimate in comfort, style, and
+            convenience.
           </Para>
           <div className="header__btn-box">
             <Button classes="btn__header">Show Places</Button>

@@ -22,19 +22,21 @@ function About() {
               Your are going to make your vacation worth a while
             </Heading>
             <Para classes="para__about">
-              We offer expectional number of houses you it will easier for you
-              to get inot as fast as possible to fullfull your needs we are
-              persistantly updating our plans.
+              We offer a wide range of properties, from cozy studios to spacious
+              homes, each with its own unique charm and character. Our
+              properties are fully equipped with all the amenities you need to
+              feel at home.
             </Para>
             <Heading classes="heading__tertiory heading__tertiory-about utils-mg-top-medium">
-              Your are going to make your vacation worth a while
+              We offer a wide range of properties
             </Heading>
             <Para classes="para__about">
-              we offer expectional number of houses you it will easier for you
-              to get inot as fast as possible to fullfull your needs we are
-              persistantly updating our plans.
+              We offer a diverse collection of vacation rentals, each designed
+              to meet the unique needs and preferences of our guests. Whether
+              you're looking for a cozy studio for a romantic getaway, a
+              spacious home for a family vacation.
             </Para>
-            <Link classes='link__about'>Learn more</Link>
+            <Link classes="link__about">Learn more</Link>
           </div>
           <Composition />
         </div>

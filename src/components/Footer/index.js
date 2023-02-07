@@ -6,8 +6,7 @@ function Footer() {
   return (
     <Container>
       <footer className='footer'>
-        <div>
-
+        <div className='footer'>
         </div>
 
       </footer>
