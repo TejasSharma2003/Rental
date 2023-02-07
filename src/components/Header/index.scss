@@ -1,7 +1,6 @@
 @import "../../sass/mixins";
 
 .header {
-  min-height: 100vh;
   background-image: linear-gradient(to bottom, rgba(#000, 40%), rgba(#000, 50%)),
     url("../../assets/header.jpg");
   background-repeat: no-repeat;
@@ -13,8 +12,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    margin-top: 10rem;
+    min-height: 100vh;
+    transform:translateY(-15rem);
+
+    @include responsive(mobile)
+    {
+      min-height: 55vh;
+      transform:translateY(0rem);
+
+    }
   }
 
   &__box {
@@ -37,7 +43,7 @@
 
   @include responsive(mobile) {
     background-position: revert;
-    min-height: 80vh;
+    min-height: 60vh;
 
     &__box {
       padding: 0;
