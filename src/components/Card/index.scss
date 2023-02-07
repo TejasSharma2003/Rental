@@ -1,9 +1,13 @@
 .card {
-  max-width: 38rem;
+  max-width: 35rem;
   background-color: var(--color-white);
   box-shadow: 0rem 2rem 5rem rgba(#000, 0.1);
   padding: 2rem 2rem 3rem 2rem;
   transition: transform 0.3s;
+  height: 50rem;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
 
   &:hover {
     transform: translateY(-1rem) scale(1.05);
@@ -14,6 +18,7 @@
     align-items: stretch;
     overflow: hidden;
     box-shadow: 0rem 2rem 5rem rgba(#000, 0.1);
+    height: 60%;
   }
 
   &__img {

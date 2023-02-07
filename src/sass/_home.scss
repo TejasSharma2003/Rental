@@ -1,8 +1,16 @@
+@import '../sass/mixins';
+
+
 #section {
-  padding: 10rem;
+  padding: 10rem 4rem;
 
   @media (max-width:634px) {
-    padding: 5rem;
-    
+    padding: 5rem 2rem ;
+  }
+
+  @include responsive(mobile)
+  {
+    padding:5rem 0;
+
   }
 }
