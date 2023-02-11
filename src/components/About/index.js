@@ -4,7 +4,6 @@ import "./index.scss";
 import Container from "../../layouts/Container";
 import Para from "../Para";
 
-// import aboutImg from "../../assets/aboutImg.png";
 import Composition from "../Composition";
 import Heading from "../Heading";
 import Link from "../../elements/Link";
@@ -28,13 +27,13 @@ function About() {
               feel at home.
             </Para>
             <Heading classes="heading__tertiory heading__tertiory-about utils-mg-top-medium">
-              We offer a wide range of properties
+              We offer a wide range of amenities
             </Heading>
             <Para classes="para__about">
-              We offer a diverse collection of vacation rentals, each designed
-              to meet the unique needs and preferences of our guests. Whether
-              you're looking for a cozy studio for a romantic getaway, a
-              spacious home for a family vacation.
+              We are dedicated to providing our guests with an unforgettable
+              experience, with exceptional customer service and personalized
+              attention to every detail. Book your next escape with us today and
+              discover the beauty of Botane vacation rentals.
             </Para>
             <Link classes="link__about">Learn more</Link>
           </div>

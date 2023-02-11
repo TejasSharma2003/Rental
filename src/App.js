@@ -7,12 +7,14 @@ import Review from "./components/Review";
 import Footer from "./components/Footer";
 
 import "react-multi-carousel/lib/styles.css";
+import NewNavbar from "./components/NewNavbar";
 
 function App() {
   console.log("App Component called!");
 
   return (
     <>
+      <NewNavbar />
       <Header />
       <main>
         <About />

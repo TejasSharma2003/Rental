@@ -1,12 +1,9 @@
 import React from "react";
 import "./index.scss";
 
-// import imgComp1 from "../../assets/img-comp1.jpg";
-// import imgComp2 from "../../assets/img-comp2.jpg";
-// import imgComp3 from "../../assets/img-comp3.jpg";
-import imgComp1 from "../../assets/nat-1.jpg";
-import imgComp2 from "../../assets/nat-2.jpg";
-import imgComp3 from "../../assets/nat-3.jpg";
+import imgComp1 from "../../assets/img-1-med.jpg";
+import imgComp2 from "../../assets/img-2-med.jpg";
+import imgComp3 from "../../assets/img-3-med.jpg";
 
 function Composition() {
   return (

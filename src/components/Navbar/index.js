@@ -1,20 +1,22 @@
 import React from "react";
 import "./index.scss";
 
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/logo-green-1x.png";
 
 import Container from "../../layouts/Container";
 
 import Button from "../../elements/Button";
+import NewNavbar from "../NewNavbar";
 
 function Navbar() {
   return (
-    <Container>
-      <nav className="navbar">
+    <NewNavbar />
+
+    /* <nav className="navbar">
         <div className="navbar__logo">
           <img src={logo} alt="logo" />
-        </div>
-        <ul className="navbar__links utils-basic-flex">
+        </div> */
+    /* <ul className="navbar__links utils-basic-flex">
           <li className="navbar__link">
             <a href="/">Features</a>
           </li>
@@ -35,9 +37,8 @@ function Navbar() {
             </a>
           </span>
           <Button classes="btn--ghost btn__navbar">Sign Up</Button>
-        </div>
-      </nav>
-    </Container>
+        </div> */
+    /* </nav> */
   );
 }
 

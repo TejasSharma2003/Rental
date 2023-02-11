@@ -1,42 +1,42 @@
-// import imgComp1 from "../../assets/img-comp1.jpg";
-// import imgComp2 from "../../assets/img-comp2.jpg";
-// import imgComp3 from "../../assets/img-comp3.jpg";
-// import hostImg from "../../assets/hostImg.jpg";
+import img1 from "../../assets/car-1.webp";
+import img2 from "../../assets/car-2.webp";
+import img3 from "../../assets/car-3.webp";
 
-import imgComp1 from "../../assets/nat-1.jpg";
-import imgComp2 from "../../assets/nat-2.jpg";
-import imgComp3 from "../../assets/nat-3.jpg";
-import hostImg from "../../assets/hostImg.jpg";
+import host1 from "../../assets/host-1.jpg";
+import host2 from "../../assets/host-2.jpg";
+import host3 from "../../assets/host-3.jpg";
 
 const places = [
   {
     id: "1cd",
-    imgSrc: imgComp1,
-    name: "Antoninus Comba",
-    description: "A wonderful place for a family and friends.",
+    imgSrc: img1,
+    name: "Berlin Juous",
+    description:
+      "I had an amazing time at this vacation rental. I would definitely recommend",
     hostName: "Berlin Juous",
-    hostImg: hostImg,
-    price: "129",
+    hostImg: host1,
+    price: "300",
     url: "#",
   },
   {
     id: "1c3",
-    imgSrc: imgComp2,
+    imgSrc: img2,
     name: "Antoninus Comba",
-    description: "A wonderful place for a family and friends.",
-    hostName: "Berlin Juous",
-    hostImg: hostImg,
-    price: "129",
+    description:
+      "The rental was exactly as advertised and even better in person.",
+    hostName: "Mike James",
+    hostImg: host2,
+    price: "499",
     url: "#",
   },
   {
     id: "1ct",
-    imgSrc: imgComp3,
-    name: "Antoninus Comba",
-    description: "A wonderful place for a family and friends.",
-    hostName: "Berlin Juous",
-    hostImg: hostImg,
-    price: "129",
+    imgSrc: img3,
+    name: "Sophie Harbour",
+    description: "I was very impressed with this vacation rental.",
+    hostName: "Sophie Harbour",
+    hostImg: host3,
+    price: "299",
     url: "#",
   },
 ];

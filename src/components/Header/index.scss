@@ -1,25 +1,24 @@
 @import "../../sass/mixins";
 
 .header {
-  background-image: linear-gradient(to bottom, rgba(#000, 40%), rgba(#000, 50%)),
+  background-image: linear-gradient(to bottom, rgba(#000, 0.6), rgba(#000, 0.3)),
     url("../../assets/header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &__box-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 90vh;
-    transform:translateY(-15rem);
+    transform: translateY(-10rem);
 
-    @include responsive(mobile)
-    {
-      min-height: 55vh;
-      transform:translateY(0rem);
-
+    @include responsive(mobile) {
+      transform: translateY(0rem);
     }
   }
 
@@ -34,8 +33,7 @@
     font-family: var(--primary-font-family);
     font-weight: 900;
 
-    @include responsive(tab)
-    {
+    @include responsive(tab) {
       margin-bottom: 1rem;
     }
   }
@@ -47,12 +45,16 @@
   }
 
   @include responsive(mobile) {
-    background-position: revert;
-    min-height: 60vh;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(#000, 0.6),
+        rgba(#000, 0.3)
+      ),
+      url("https://images.unsplash.com/photo-1623501387383-1e19e63f17b9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGZhbWlseSUyMHZhY2F0aW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    min-height: 85vh;
 
     &__box {
       padding: 0;
     }
   }
-
 }

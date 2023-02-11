@@ -1,8 +1,8 @@
-@import '../../sass/mixins';
+@import "../../sass/mixins";
 
 .para {
   font-size: var(--font-size-para);
-  line-height: 1.6;
+  line-height: 1.7;
   color: var(--tertiory-color);
 
   &:not(:last-child) {
@@ -14,8 +14,7 @@
     margin: 0 auto;
     color: var(--color-white);
 
-    @include responsive(mobile)
-    {
+    @include responsive(mobile) {
       max-width: 100%;
     }
   }
@@ -23,4 +22,14 @@
     padding: 1rem 0;
   }
 
+  &__footer {
+    font-size: var(--font-size-link);
+    max-width: 40%;
+
+    @media (max-width: 920px) {
+      text-align: center;
+      margin-top: 5rem;
+      max-width: 100%;
+    }
+  }
 }

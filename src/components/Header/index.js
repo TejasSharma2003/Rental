@@ -11,7 +11,6 @@ import Para from "../Para";
 function Header() {
   return (
     <div className="header">
-      <Navbar />
       <div className="header__box-container">
         <div className="header__box">
           <h1 className="header__primary-h1">

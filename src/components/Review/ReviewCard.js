@@ -1,7 +1,7 @@
 import React from "react";
 
 import Avatar from "../Avatar";
-import user from "../../assets/hostImg.jpg";
+import user from "../../assets/host-1.jpg";
 
 import { ImQuotesLeft } from "react-icons/im";
 
