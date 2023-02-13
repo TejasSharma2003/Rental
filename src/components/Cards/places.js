@@ -38,7 +38,7 @@ const places = [
     hostImg: host3,
     price: "299",
     url: "#",
-  },
+  }
 ];
 
 export default places;

@@ -1,12 +1,15 @@
-@import '../../sass/mixins';
+@import "../../sass/mixins";
 
 .review {
   &__container {
-    padding: 5rem 0 10rem 10rem !important;
+    padding: 0 0 8rem 5rem !important;
 
-    @include responsive(mobile)
-    {
-      padding:5rem 2rem !important;
+    ul {
+      margin: 0 auto !important;
+    }
+
+    @include responsive(mobile) {
+      padding: 5rem 2rem !important;
     }
   }
 
@@ -64,8 +67,7 @@
     // left: 4%;
     transform: translateX(-100%);
 
-    @include responsive(mobile)
-    {
+    @include responsive(mobile) {
       transform: translateX(-50%);
     }
   }

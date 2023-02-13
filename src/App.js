@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 
 import "react-multi-carousel/lib/styles.css";
 import NewNavbar from "./components/NewNavbar";
+import Navbar from "./components/Navbar";
 
 function App() {
   console.log("App Component called!");

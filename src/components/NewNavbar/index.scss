@@ -1,9 +1,16 @@
+@import "../../sass/mixins";
+
 .navigation {
   //     min-height: 100vh;
   //     min-width: 100vw;
   //   position: fixed;
   //     margin: 0 auto;
   //     overflow: hidden;
+  display: none;
+
+  @include responsive(tab) {
+    display: block;
+  }
 
   &__bg {
     position: fixed;
@@ -11,18 +18,18 @@
     top: 3rem;
     width: 2.5rem;
     height: 2.5rem;
-    background-color: #fff;
     border-radius: 50%;
-    background-image: linear-gradient(
-      to right bottom,
-      rgba(#ffa024, 0.9),
-      rgba(#fca83a, 0.8)
-    );
+    background-color: var(--secondary-color);
+    // background-image: linear-gradient(
+    //   to right bottom,
+    //   rgba(#ffa024, 0.9),
+    //   rgba(#fca83a, 0.8)
+    // );
     transition: transform 0.5s;
     z-index: 200;
 
     &--open {
-      transform: scale(200);
+      transform: scale(100);
     }
   }
 
@@ -34,7 +41,7 @@
     height: 5rem;
     background-color: #fff;
     border-radius: 50%;
-    box-shadow: 0rem .5rem 2rem rgba(#000,20%);
+    box-shadow: 0rem 0.5rem 2rem rgba(#000, 20%);
 
     z-index: 1000;
     display: flex;

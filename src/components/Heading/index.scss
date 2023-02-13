@@ -1,10 +1,10 @@
-
 .heading {
   &__primary {
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-family: var(--primary-font-family);
-    text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    max-width: 40%;
+    line-height: 1.6;
     background-image: linear-gradient(
       to right,
       var(--primary-color-light),
@@ -12,8 +12,13 @@
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
     font-weight: 800;
+
+    @media (max-width: 920px) {
+      max-width: 100%;
+      text-align: center;
+    }
   }
 
   &__secondary {

@@ -15,7 +15,7 @@ function NewNavbar() {
   };
 
   return (
-    <>
+    <div className="navigation">
       <div className={`navigation__bg ${bgClass}`}></div>
       <div onClick={onClickHandler} className="navigation__menu">
         <span
@@ -37,7 +37,7 @@ function NewNavbar() {
           <li className="navigation__link">Contact</li>
         </ul>
       </nav>
-    </>
+    </div>
   );
 }
 

@@ -6,15 +6,12 @@ import "./index.scss";
 import Cards from "../Cards";
 import Link from "../../elements/Link";
 
-
 function Places() {
   return (
     <div id="section">
       <Container>
+        <Heading classes="heading__primary">places for your next stay.</Heading>
         <div className="places">
-          <Heading classes="heading__primary">
-            places for your next stay.
-          </Heading>
           <div className="places__container">
             <Cards />
           </div>

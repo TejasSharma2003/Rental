@@ -14,13 +14,13 @@ import { CustomButtonGroupAsArrows, responsive } from "./Carousel";
 function Review() {
   return (
     <>
-      <Container>
-        <section id="section">
+      <section id="section">
+        <Container>
           <Heading classes="heading__primary">
             WE MAKE PEOPLE GENUINELY HAPPY
           </Heading>
-        </section>
-      </Container>
+        </Container>
+      </section>
       <Carousel
         responsive={responsive}
         arrows={false}

@@ -2,18 +2,19 @@
 
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 3rem 0;
   position: relative;
   z-index: 10;
 
-  &__logo > img
-  {
+  @media (max-width: 920px) {
+    justify-content: center;
+  }
+
+  &__logo > img {
     width: 50%;
-    
-    @include responsive(tab)
-    {
+
+    @include responsive(tab) {
       width: 75%;
     }
   }
@@ -22,8 +23,7 @@
     font-size: var(--font-size-link);
     color: var(--color-white);
 
-    @include responsive(tab)
-    {
+    @include responsive(tab) {
       display: none;
     }
   }
@@ -34,7 +34,7 @@
     @include under-line-hover(var(--color-white));
 
     &:not(:last-child) {
-      margin-right: 3rem;
+      margin-right: 5rem;
     }
   }
 
@@ -54,5 +54,4 @@
     color: var(--color-white);
     font-size: var(--font-size-link);
   }
-
 }

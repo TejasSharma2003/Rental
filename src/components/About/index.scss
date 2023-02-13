@@ -2,12 +2,11 @@
   display: flex;
   align-items: flex-start;
   position: relative;
-  margin-top: 15rem;
+  margin-top: var(--margin-top);
 
   &__text-box {
     flex: 0 1 44%;
   }
-
   &__img-box {
     flex: 0 0 40%;
   }
@@ -20,6 +19,6 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    margin-top:5rem;
+    margin-top: 5rem;
   }
 }
