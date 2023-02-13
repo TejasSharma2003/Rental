@@ -41,7 +41,7 @@
 
     @include responsive(mobile) {
       max-width: 100%;
-      transform: translateY(5rem);
+      transform: translateY(0);
     }
   }
 
